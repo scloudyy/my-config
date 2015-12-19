@@ -99,10 +99,14 @@ alias j='fasd_cd -d'
 alias jj='fasd_cd -d -i'
 alias ke='pkill -9 emacs'
 alias e='emacs'
+alias ec='emacsclient'
 alias cl='clear'
 alias ll="ls -l"
 alias la='ls -a'
+alias x='exit'
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
+
+export NO_AT_BRIDGE=1
