@@ -109,4 +109,23 @@ alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 
+alias cmakeg='cmake -DCMAKE_BUILD_TYPE=debug'
+alias lldb='lldb-3.4'
+
 export NO_AT_BRIDGE=1
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+#set oracle jdk environment
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_66  ## 这里要注意目录要换成自己解压的jdk 目录
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+
+#set maven environment
+export M2_HOME="/usr/local/apache-maven-3.3.9"
+export MAVEN_OPTS="-Xms256m -Xmx512m"
+export PATH=$M2_HOME/bin:$PATH
