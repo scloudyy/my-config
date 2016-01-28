@@ -99,7 +99,7 @@ alias j='fasd_cd -d'
 alias jj='fasd_cd -d -i'
 alias ke='pkill -9 emacs'
 alias e='emacs'
-alias ec='emacsclient'
+alias ec='emacsclient -t'
 alias cl='clear'
 alias ll="ls -l"
 alias la='ls -a'
@@ -113,7 +113,6 @@ alias cmakeg='cmake -DCMAKE_BUILD_TYPE=debug'
 alias lldb='lldb-3.4'
 
 export NO_AT_BRIDGE=1
-
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -129,3 +128,5 @@ export PATH=${JAVA_HOME}/bin:$PATH
 export M2_HOME="/usr/local/apache-maven-3.3.9"
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 export PATH=$M2_HOME/bin:$PATH
+
+export TERM=xterm-256color
