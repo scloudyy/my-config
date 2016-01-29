@@ -100,6 +100,7 @@ alias jj='fasd_cd -d -i'
 alias ke='pkill -9 emacs'
 alias e='emacs'
 alias ec='emacsclient -t'
+alias ecc='emacsclient -c'
 alias cl='clear'
 alias ll="ls -l"
 alias la='ls -a'
